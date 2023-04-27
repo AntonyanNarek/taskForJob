@@ -4,7 +4,7 @@ import numpy as np
 
 
 async def getETHhourChange():
-    tv = TvDatafeed() # без авторизации вроде есть ограничения по частоте запросов
+    tv = TvDatafeed() # Библиотека для парсинга с TradingView. Без авторизации вроде есть ограничения по частоте запросов
     while True:
         priceBTC = []
         priceETH = []
