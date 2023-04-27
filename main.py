@@ -27,7 +27,7 @@ async def getETHhourChange():
         change =((priceETH[-1] / priceETH[0])-1)*(1-corr)
 
         # Сообщение при изменении на 1% собственных движений eth за последний час
-        if change >= 0.001:
+        if change >= 0.01:
             print(f'Цена eth изменилась на {((change*100)//0.01)/100}%')
             await asyncio.sleep(60) # ждём следующую минуту, пока изменений не будет
 
